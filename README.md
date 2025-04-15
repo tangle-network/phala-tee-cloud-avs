@@ -49,7 +49,7 @@ Before you can build and run this project, ensure you have the following install
 2.  **Install Foundry dependencies:**
 
     ```bash
-    forge install
+    forge soldeer update -d
     ```
 
 3.  **Build the contracts:**
