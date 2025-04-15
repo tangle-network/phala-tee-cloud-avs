@@ -1,0 +1,36 @@
+[package]
+name = "phala-tee-cloud-avs-blueprint-bin"
+version = "0.1.0"
+description.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+readme.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[dependencies]
+phala-tee-cloud-avs-blueprint-lib.workspace = true
+
+blueprint-sdk = { workspace = true, features = ["std", "eigenlayer", "evm", "cronjob"] }
+tokio = { workspace = true, features = ["rt-multi-thread"] }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+tracing = { workspace = true }
+tower.workspace = true
+
+
+[build-dependencies]
+phala-tee-cloud-avs-blueprint-lib.workspace = true
+blueprint-sdk = { workspace = true, features = ["macros", "build"] }
+
+# TODO: Not yet supported by blueprint-manager: https://github.com/tangle-network/blueprint/issues/730
+#[[package.metadata.gadget.Native.sources]]
+#owner = "tangle-network"
+#repo = "phala-tee-cloud-avs"
+#tag = "0.1.0"
+#binaries = [
+#    { arch = "Amd64", os = "Linux", name = "amd64-linux-phala-tee-cloud-avs-gadget" },
+#    { arch = "Arm64", os = "Linux", name = "arm64-linux-phala-tee-cloud-avs-gadget" },
+#]

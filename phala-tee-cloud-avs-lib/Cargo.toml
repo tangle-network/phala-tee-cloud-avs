@@ -1,0 +1,43 @@
+[package]
+name = "phala-tee-cloud-avs-blueprint-lib"
+version = "0.1.0"
+description.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+readme.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[dependencies]
+blueprint-sdk = { workspace = true, features = ["std", "eigenlayer", "evm", "macros"] }
+cron = { workspace = true }
+color-eyre = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }
+tracing.workspace = true
+
+hex = { workspace = true }
+k256 = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true, features = ["v4"] }
+bip39 = { workspace = true }
+jsonrpc-core = { workspace = true }
+jsonrpc-http-server = { workspace = true }
+num-bigint = { workspace = true }
+lazy_static = { workspace = true }
+
+[dev-dependencies]
+blueprint-sdk = { workspace = true, features = ["testing", "tangle"] }
+eigenlayer-contract-deployer = { workspace = true }
+tokio = { workspace = true, features = ["macros"] }
+color-eyre = { workspace = true }
+thiserror = "1.0"
+
+[package.metadata.blueprint]
+manager = { Evm = "ExperimentalBlueprint" }
+master_revision = "Latest"

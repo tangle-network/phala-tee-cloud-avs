@@ -1,0 +1,26 @@
+[profile.default]
+src = "contracts/src"
+test = "contracts/test"
+out = "contracts/out"
+script = "contracts/script"
+cache_path = "contracts/cache"
+broadcast = "contracts/broadcast"
+libs = ["dependencies"]
+auto_detect_remappings = true
+
+evm_version = "shanghai"
+solc_version = "0.8.27"
+gas_limit = 5000000000
+deny_warnings = false
+via_ir = false
+optimizer = true
+optimizer_runs = 100
+
+[soldeer]
+recursive_deps = true
+remappings_location = "txt"
+remappings_version = false
+
+[dependencies]
+eigenlayer-middleware = { version = "0.5.4", git = "https://github.com/Layr-Labs/eigenlayer-middleware", rev = "4d63f27247587607beb67f96fdabec4b2c1321ef" }
+forge-std = "1.9.6"
