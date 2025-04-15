@@ -36,7 +36,7 @@ serde = { version = "1.0.215", default-features = false }
 serde_json = { version = "1.0.115", default-features = false }
 uuid = { version = "1.15.0", features = ["v4"], default-features = false }
 bip39 = { version = "2.1.0", default-features = false }
-thiserror = { version = "2.0.6", default-features = false }
+thiserror = { version = "2.0.12", default-features = false }
 num-bigint = { version = "0.4.6", default-features = false }
 lazy_static = { version = "1.5.0", default-features = false }
 eigenlayer-contract-deployer = { version = "0.1.0", default-features = false }
