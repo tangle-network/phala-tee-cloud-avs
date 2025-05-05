@@ -19,7 +19,7 @@ phala-tee-cloud-avs-blueprint-lib = { path = "phala-tee-cloud-avs-lib" }
 
 blueprint-sdk = { git = "https://github.com/tangle-network/blueprint.git", default-features = false }
 tokio = { version = "1.43.0", default-features = false }
-color-eyre = { version = "0.6.3", default-features = false }
+color-eyre = { version = "0.6.4", default-features = false }
 tower = { version = "0.5.2", default-features = false }
 tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
 tracing = "0.1.41"
