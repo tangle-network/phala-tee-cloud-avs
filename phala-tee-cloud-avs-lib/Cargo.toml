@@ -36,7 +36,7 @@ blueprint-sdk = { workspace = true, features = ["testing", "tangle"] }
 eigenlayer-contract-deployer = { workspace = true }
 tokio = { workspace = true, features = ["macros"] }
 color-eyre = { workspace = true }
-thiserror = "1.0"
+thiserror = "2.0"
 
 [package.metadata.blueprint]
 manager = { Evm = "ExperimentalBlueprint" }
